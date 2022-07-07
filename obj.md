@@ -45,3 +45,47 @@
 		ctx.fillRect(left,100,200,200)
 	},10)
 ```
+
+### 4. canvas绘制矩形
+```js
+		//4.设置颜色
+	ctx.fillStyle = 'green'
+	
+	//3.绘制矩形
+
+	//ctx.fillRect('x轴,y轴,宽,高')
+	ctx.fillRect(100,100,200,50)
+
+```
+
+### 5.canvas 填充矩形
+```js
+	ctx.strokeStyle='red'
+	ctx.strokeRect(100,100,200,200)
+```
+
+### 6.绘制路径
+
+- 绘制路经是为了绘制不规则的多边形
+- 路径都是闭合的 使用路经进行绘制的时候需要既定步骤
+	- 需要设置起点
+	- 使用绘制命令画出路径
+	- 封闭路径
+	- 填充或者绘制已经封闭路径的形状
+
+```js
+	//创建一个路径
+	ctx.beginPath();
+	//移动绘制点
+	ctx.moveTo(100,100);
+	//描述进行路径
+	ctx.lineTO(200,100);
+	ctx.lineTo(200,200);
+	ctx.lineTo(100.200);
+	// 闭合路径
+	ctx.closePath();
+	// 绘制这个不规则的图形
+	ctx.strokeStyle='red';
+	//绘制
+	ctx.stroke()
+```
