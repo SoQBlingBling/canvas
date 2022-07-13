@@ -10,7 +10,8 @@
           "type": "markdown",
           "state": {
             "file": "obj.md",
-            "mode": "source"
+            "mode": "source",
+            "source": false
           }
         }
       },
@@ -21,7 +22,8 @@
           "type": "markdown",
           "state": {
             "file": "obj.md",
-            "mode": "preview"
+            "mode": "preview",
+            "source": false
           }
         }
       }
